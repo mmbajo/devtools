@@ -28,7 +28,7 @@ This repository is a collection of mini-demos showcasing the usage and capabilit
 2. Navigate to the folder of the tool you are interested in:
 
     ```bash
-    cd DevToolMiniDemos/Kubernetes
+    cd devtools/Kubernetes
     ```
 
 3. Follow the README in that specific folder to get the demo running.
@@ -57,7 +57,7 @@ A simple Airflow DAG to showcase data pipeline orchestration. Includes a Spark t
 
 A mini-demo for running Spark tasks both locally and on AWS. Focuses on data processing and manipulation.
 
-### ... (Add more as your repository grows)
+### ... (Add more as repository grows)
 
 ## Contributing
 
