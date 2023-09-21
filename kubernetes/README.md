@@ -24,10 +24,10 @@ This project provides a Kubernetes-based solution to run two separate services f
 
 ### Clone the Repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/mmbajo/devtools.git
 cd kubernetes
-\`\`\`
+```
 
 ### Build Docker Images
 
@@ -35,23 +35,23 @@ Run the following commands to build the Docker images for both services:
 
 For Preprocessing Service:
 
-\`\`\`bash
+```bash
 docker build -t preprocessing-service:latest ./preprocessing_service
-\`\`\`
+```
 
 For Inference Service:
 
-\`\`\`bash
+```bash
 docker build -t inference-service:latest ./inference_service
-\`\`\`
+```
 
 ### Deploy to Kubernetes
 
 Apply the Kubernetes manifests to deploy both services and their respective deployments:
 
-\`\`\`bash
+```bash
 kubectl apply -f k8s_manifests/
-\`\`\`
+```
 
 ## Usage
 
@@ -61,19 +61,19 @@ Once deployed, you can interact with these services by sending HTTP requests. Yo
 
 ### Using NodePort
 
-\`\`\`bash
+```bash
 kubectl expose deployment preprocessing-service --type=NodePort --port=8080
 kubectl expose deployment inference-service --type=NodePort --port=8081
-\`\`\`
+```
 
 ### Using LoadBalancer
 
 If you are using a cloud provider:
 
-\`\`\`bash
+```bash
 kubectl expose deployment preprocessing-service --type=LoadBalancer --port=8080 --target-port=8080
 kubectl expose deployment inference-service --type=LoadBalancer --port=8081 --target-port=8081
-\`\`\`
+```
 
 ## Monitoring
 
