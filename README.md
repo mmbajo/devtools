@@ -37,23 +37,23 @@ This repository is a collection of mini-demos showcasing the usage and capabilit
 
 Here's a list of tools for which demos are available:
 
-### [Kubernetes](./Kubernetes/)
+### [Kubernetes](./kubernetes/)
 
 A mini-demo showcasing a simple microservices setup using Kubernetes. This demo includes a preprocessing service and an inference service.
 
-### [Kafka](./Kafka/)
+### [Kafka](./kafka/)
 
 This folder contains a Kafka producer and consumer example, focused on real-time messaging. The demo showcases a re-identification task with two cameras.
 
-### [RabbitMQ](./RabbitMQ/)
+### [RabbitMQ](./rabbitmq/)
 
 An example illustrating message queuing using RabbitMQ. A Flask app acts as the producer, while a separate consumer reads the message.
 
-### [Airflow](./Airflow/)
+### [Airflow](./airflow/)
 
 A simple Airflow DAG to showcase data pipeline orchestration. Includes a Spark task example.
 
-### [Spark](./Spark/)
+### [Spark](./spark/)
 
 A mini-demo for running Spark tasks both locally and on AWS. Focuses on data processing and manipulation.
 
