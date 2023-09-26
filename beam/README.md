@@ -57,3 +57,34 @@ Upon running the container, you should see output similar to the following, whic
 
 This example uses Apache Beam's DirectRunner, suitable for development and testing. For more advanced usage and different runners, refer to the official [Apache Beam documentation](https://beam.apache.org/documentation/runners/capability-matrix/).
 
+# When to Use Apache Spark, Apache Beam, and Apache Airflow
+
+## Apache Spark
+
+### When to use
+- When you have large-scale data processing tasks.
+- For running machine learning algorithms at scale.
+- When you need a general-purpose, in-memory distributed data processing engine.
+
+### Sample Use-case
+- Batch processing and real-time analytics on large datasets.
+
+## Apache Beam
+
+### When to use
+- When you need a unified model for both batch and stream data processing.
+- When you're working with multiple data processing engines.
+  
+### Sample Use-case
+- Real-time data ingestion and transformation that can run on multiple runners like Apache Flink, Google Cloud Dataflow, etc.
+
+## Apache Airflow
+
+### When to use
+- When you need to schedule and orchestrate complex workflows.
+- For automating the flow of data between systems.
+
+### Sample Use-case
+- ETL (Extract, Transform, Load) workflows, data warehousing tasks.
+
+
